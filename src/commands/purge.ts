@@ -6,7 +6,7 @@ import {
   MessageFlags,
   TextChannel,
 } from "discord.js";
-import { Command } from "../interfaces/command.interface.ts";
+import type { Command } from "../interfaces/command.interface.ts";
 import {
   getIntegerInput,
   getInvokingMember,

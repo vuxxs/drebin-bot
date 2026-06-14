@@ -1,5 +1,5 @@
 import { ActivityType } from "discord.js";
-import { CustomClient } from "../interfaces/client.interface.ts";
+import type { CustomClient } from "../types/client.type.ts";
 
 export default function updateMembersCount(client: CustomClient) {
   const userSet = new Set();

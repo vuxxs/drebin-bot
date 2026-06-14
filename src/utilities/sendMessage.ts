@@ -1,15 +1,9 @@
-import {
-  ChatInputCommandInteraction,
-  EmbedBuilder,
-  Message,
-  MessagePayload,
-} from "discord.js";
-
-export type dualContentsType =
-  | string
-  | MessagePayload
-  | { embeds: EmbedBuilder[] }
-  | { content: string };
+import { ChatInputCommandInteraction, Message } from "discord.js";
+import type {
+  dualContentsType,
+  InteractionContent,
+  MessageContent,
+} from "../types/sendMessage.type.ts";
 
 export async function sendMessage(
   message: Message | undefined,
@@ -17,15 +11,17 @@ export async function sendMessage(
   content: dualContentsType,
 ) {
   const channel = message?.channel as
-    | { send?: (payload: dualContentsType) => Promise<unknown> }
+    | {
+        send?: (payload: MessageContent) => Promise<unknown>;
+      }
     | undefined;
 
   if (channel?.send) {
-    return await channel.send(content);
+    return await channel.send(content as MessageContent);
   }
 
   if (interaction) {
-    return await interaction.reply(content);
+    return await interaction.reply(content as InteractionContent);
   }
 
   return undefined;

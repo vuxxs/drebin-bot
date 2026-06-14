@@ -4,7 +4,7 @@ import {
   Message,
 } from "discord.js";
 import { afkStatuses } from "../consts/afk.ts";
-import { Command } from "../interfaces/command.interface.ts";
+import type { Command } from "../interfaces/command.interface.ts";
 
 export default {
   name: "afk",

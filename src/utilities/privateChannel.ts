@@ -5,7 +5,7 @@ import {
   TextChannel,
   User,
 } from "discord.js";
-import {
+import type {
   EnsuredPrivateTextChannel,
   PrivateTextChannelOptions,
 } from "../interfaces/privateChannel.interface.ts";
