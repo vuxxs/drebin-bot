@@ -1,10 +1,10 @@
 import { REST } from "@discordjs/rest";
 import { Routes } from "discord-api-types/v10";
-import { CustomClient } from "../interfaces/client.interface.ts";
+import type { CustomClient } from "../types/client.type.ts";
 import { ApplicationCommandType } from "discord.js";
 import { readDirArray } from "./readDirectory.ts";
 import { drebinLogger } from "./logger.ts";
-import { Command } from "../interfaces/command.interface.ts";
+import type { Command } from "../interfaces/command.interface.ts";
 
 export const registerSlashCommands = async (
   client: CustomClient,

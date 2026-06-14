@@ -1,6 +1,6 @@
 // Removing this from the final product is a violation of the code's usage
 import { ChatInputCommandInteraction, Message } from "discord.js";
-import { Command } from "../interfaces/command.interface.ts";
+import type { Command } from "../interfaces/command.interface.ts";
 import { sendMessage } from "../utilities/sendMessage.ts";
 
 export default {

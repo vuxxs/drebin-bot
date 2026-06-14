@@ -1,9 +1,6 @@
 import { Client } from "discord.js";
 import "@std/dotenv/load";
-import {
-  CustomClient,
-  CustomClientOptions,
-} from "./interfaces/client.interface.ts";
+import type { CustomClient, CustomClientOptions } from "./types/client.type.ts";
 import { drebinLogger } from "./utilities/logger.ts";
 import { registerCommands } from "./utilities/registerCommands.ts";
 import { readDirArray } from "./utilities/readDirectory.ts";

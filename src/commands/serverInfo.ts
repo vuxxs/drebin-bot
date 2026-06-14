@@ -1,5 +1,5 @@
 import { ChatInputCommandInteraction, EmbedBuilder, Message } from "discord.js";
-import { Command } from "../interfaces/command.interface.ts";
+import type { Command } from "../interfaces/command.interface.ts";
 import { sendMessage } from "../utilities/sendMessage.ts";
 
 export default {

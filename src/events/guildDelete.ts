@@ -1,4 +1,4 @@
-import { CustomClient } from "../interfaces/client.interface.ts";
+import type { CustomClient } from "../types/client.type.ts";
 import { drebinLogger } from "../utilities/logger.ts";
 import updateMembersCount from "../utilities/updateMembersCount.ts";
 
