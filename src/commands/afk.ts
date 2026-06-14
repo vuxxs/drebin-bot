@@ -3,9 +3,8 @@ import {
   ChatInputCommandInteraction,
   Message,
 } from "discord.js";
+import { afkStatuses } from "../consts/afk.ts";
 import { Command } from "../interfaces/command.interface.ts";
-
-export const afkStatuses: { [userId: string]: string } = {};
 
 export default {
   name: "afk",

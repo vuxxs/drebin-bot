@@ -1,5 +1,5 @@
 import { ChannelType } from "discord.js";
-import { afkStatuses } from "../commands/afk.ts";
+import { afkStatuses } from "../consts/afk.ts";
 import { CustomClient } from "../interfaces/client.interface.ts";
 import { drebinLogger } from "../utilities/logger.ts";
 
